@@ -3,7 +3,8 @@
 
 ### Bug Fixes
 
-* add script at the end so it has the html loaded ([7a848f3](https://github.com/citosid/qr/commit/7a848f3d7329e5f629482f7e4489e86dc9356bec))
+* add jquery and qrcode ([6bc193b](https://github.com/citosid/qr/commit/6bc193be8055814ae599864a26a27e48a6bfe20e))
+* add script at the end so it has the html loaded ([df8ac34](https://github.com/citosid/qr/commit/df8ac343ec1ff19bb311f6db5b03722c5fd2c2da))
 * fix path for js assets ([1c188d4](https://github.com/citosid/qr/commit/1c188d491d17b3e77ec7073ecc0122270f2e0c17))
 
 
