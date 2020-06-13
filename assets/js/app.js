@@ -1,14 +1,18 @@
 var submit = document.getElementById('transform_qr');
 var url = document.getElementById('url');
-var qr = new QRCode(
-  document.getElementById("qrcode"), {
-    width: 128,
-    height: 128,
-    correctLevel : QRCode.CorrectLevel.H
-  }
-);
+var image = document.getElementById('qr');
+var header = document.getElementById('headerQr');
+
+var QRC = qrcodegen.QrCode;
 
 submit.addEventListener('click', event => {
-  qr.clear();
-  qr.makeCode(url.value);
+  image.innerHTML = '';
+  var qr0 = QRC.encodeText(url.value, QRC.Ecc.MEDIUM);
+  var svg = qr0.toSvgString(1);
+  image.innerHTML = svg;
+  header.innerText = url.value;
 });
+
+url.addEventListener('change', () => submit.click());
+url.addEventListener('blur', () => submit.click());
+url.addEventListener('keyup', () => submit.click());

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/app.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
   </head>
@@ -33,7 +34,10 @@
         <input type="text" id="url" placeholder="URL to turn into a QR Code" />
         <br>
         <button id="transform_qr">Create QR</button>
-        <div id="qrcode"></div>
+        <div id="qrWrapper">
+          <h3 id="headerQr"></h3>
+          <div id="qr"></div>
+        </div>
         <p>
           Save the image to share it.
         </p>
@@ -41,9 +45,9 @@
       </section>
     </div>
 
-    <script src="/qr/assets/js/jquery.js" type="application/javascript"></script>
-    <script src="/qr/assets/js/qrcode.js" type="application/javascript"></script>
-    <script src="/qr/assets/js/app.js" type="application/javascript"></script>
+    <script src="{{ '/assets/js/jquery.js?v=' | append: site.github.build_revision | relative_url }}" type="application/javascript"></script>
+    <script src="{{ '/assets/js/qrcode.js?v=' | append: site.github.build_revision | relative_url }}" type="application/javascript"></script>
+    <script src="{{ '/assets/js/app.js?v=' | append: site.github.build_revision | relative_url }}" type="application/javascript"></script>
     {% if site.google_analytics %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
