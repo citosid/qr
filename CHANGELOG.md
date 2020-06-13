@@ -3,7 +3,8 @@
 
 ### Bug Fixes
 
-* fix path for js assets ([82a3cd6](https://github.com/citosid/qr/commit/82a3cd6443a3c2c0c0638981edeec62f19e3959f))
+* add script at the end so it has the html loaded ([7a848f3](https://github.com/citosid/qr/commit/7a848f3d7329e5f629482f7e4489e86dc9356bec))
+* fix path for js assets ([1c188d4](https://github.com/citosid/qr/commit/1c188d491d17b3e77ec7073ecc0122270f2e0c17))
 
 
 ### Features
