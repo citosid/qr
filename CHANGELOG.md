@@ -1,9 +1,14 @@
 #  (2020-06-13)
 
 
+
+# [0.2.0](https://github.com/citosid/qr/compare/0.1.0...0.2.0) (2020-06-13)
+
+
 ### Features
 
-* add posibility to download the qr code as image ([8117341](https://github.com/citosid/qr/commit/8117341624dfe5d4ec534f421bbf0b37498c63bd))
+* **release:** release commit for 0.2.0 ([2086888](https://github.com/citosid/qr/commit/20868889e96172d4dc0a656cd21461b75c56e7ca))
+* add posibility to download the qr code as image ([eb55c18](https://github.com/citosid/qr/commit/eb55c187a17c81131066cd9595e9ca84a7ccc4bb))
 
 
 
