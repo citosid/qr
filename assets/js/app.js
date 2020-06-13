@@ -4,12 +4,13 @@ var image = document.getElementById('qr');
 var header = document.getElementById('headerQr');
 
 var QRC = qrcodegen.QrCode;
+var svgSrc = 'data:image/svg+xml;base64,';
 
 submit.addEventListener('click', event => {
-  image.innerHTML = '';
+  image.src = '';
   var qr0 = QRC.encodeText(url.value, QRC.Ecc.MEDIUM);
   var svg = qr0.toSvgString(1);
-  image.innerHTML = svg;
+  image.src = svgSrc + btoa(svg);
   header.innerText = url.value;
 });
 
